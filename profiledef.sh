@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="archlinux"
+iso_name="lupaca"
 iso_label="ARCH_$(date +%Y%m)"
-iso_publisher="Arch Linux <https://archlinux.org>"
-iso_application="Arch Linux Live/Rescue CD"
+iso_publisher="Arch Linux Lupaca  <https://archlinux.org>"
+iso_application="Arch Linux Lupaca Live"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
@@ -18,4 +18,9 @@ file_permissions=(
   ["/usr/local/bin/choose-mirror"]="0:0:755"
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
+  ["/etc/sudoers.d"]="0:0:750"
+  ["/etc/shadow"]="0:0:0400"
+  ["/etc/gshadow"]="0:0:0400"
+  ["/etc/os-release"]="0:0:777"
+  ["/etc/vconsole.conf"]="0:0:644" 
 )
