@@ -410,7 +410,6 @@ zeromq
 bluedevil
 breeze
 breeze-gtk
-discover
 drkonqi
 kactivitymanagerd
 kde-cli-tools
@@ -568,13 +567,31 @@ kcalc
 kdegraphics-thumbnailers
 kdesdk-thumbnailers
 kmail
-kmix
+#kmix
 kolourpaint
 konsole
 korganizer
 okular
 print-manager
 spectacle
+
+# firefox
+adwaita-icon-theme
+at-spi2-atk
+at-spi2-core
+atk
+colord
+desktop-file-utils
+gtk-update-icon-cache
+gtk3
+json-glib
+libcloudproviders
+libgusb
+librsvg
+mailcap
+rest
+tracker3
+firefox
 
 # Extra
 ranger
@@ -585,4 +602,4 @@ gnu-free-fonts
 
 # lupaca
 lupaca-keyring
-
+lupaca-kde-config
