@@ -1,0 +1,32 @@
+#! /bin/bash
+
+echo "###  Lupaca final script  ###"
+
+#echo "Permissions of folders"
+#chmod 750 /etc/sudoers.d
+#chmod 750 /etc/polkit-1/rules.d
+#chgrp polkitd /etc/polkit-1/rules.d
+#chmod -v 750 /root
+
+#echo "Clean Autologin"
+#rm -rf /etc/systemd/system/getty@tty1.service.d
+#####
+
+echo "Cleanup files"
+sudo rm -f /etc/sudoers.d/g_wheel
+sudo rm -f /etc/polkit-1/rules.d/49-nopasswd-calamares.rules
+sudo rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
+sudo rm -r /etc/systemd/system/reflector.service.d
+sudo rm -f /etc/systemd/system/choose-mirror.service
+sudo rm -f /etc/systemd/system/pacman-init.service
+sudo rm -f /etc/systemd/system/livecd-talk.service
+sudo rm -f /etc/systemd/system/livecd-alsa-unmuter.service
+sudo rm -f /etc/systemd/system/reset-sddm.service
+sudo rm -rf /root/{.automated_script.ssh,.zlogin,.cache}
+sudo echo "" > /etc/motd
+#cp -f /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf.d/
+sudo rm -f /etc/sddm.conf.d/autologin.conf
+#sudo rm -rf /etc/skel/.config/Desktop
+
+echo "Cleaning script"
+sudo rm /usr/local/bin/lupaca-final

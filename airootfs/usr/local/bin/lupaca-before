@@ -1,0 +1,21 @@
+#! /bin/bash
+
+echo "##########################"
+echo "# Starting lupaca script #"
+echo "##########################"
+
+echo "Setting linux preset"
+sudo mv /etc/mkinitcpio.d/mkinitcpio.conf /etc/mkinitcpio.conf
+sudo mv /etc/mkinitcpio.d/lupaca /etc/mkinitcpio.d/linux.preset
+
+echo "Populate keys"
+sudo pacman-key --init
+sudo pacman-key --populate archlinux lupaca
+sudo pacman-key --lsign-key AB8D7ECE0B66188D
+
+echo "Grub theme"
+sudo mkdir -p /boot/grub/themes
+sudo cp -Rf /usr/share/grub/themes/starfield
+
+echo "Cleaning"
+sudo rm /usr/local/bin/lupaca-before
