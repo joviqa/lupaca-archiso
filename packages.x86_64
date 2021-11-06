@@ -100,7 +100,7 @@ syslinux
 #systemd-resolvconf
 tcpdump
 terminus-font
-termite-terminfo
+#termite-terminfo
 testdisk
 tmux
 tpm2-tss
@@ -311,7 +311,7 @@ libreoffice-fresh
 libreoffice-fresh-es
 hunspell
 hunspell-en_us
-hunspell-es-any
+hunspell-es_any
 hunspell-es_bo
 hunspell-es_cl
 hunspell-es_ec
