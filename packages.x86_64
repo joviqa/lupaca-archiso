@@ -121,7 +121,7 @@ xl2tpd
 
 # Archiso extra packages
 grub
-plymouth
+#plymouth
 #linux-headers
 open-vm-tools
 virtualbox-guest-utils
@@ -141,7 +141,7 @@ xorg-xinit
 
 # Video Packages
 xf86-video-vesa
-xf86-video-intel
+#xf86-video-intel
 xf86-video-nouveau
 xf86-video-amdgpu
 xf86-video-ati
@@ -259,6 +259,9 @@ cups-pdf
 gsfonts
 print-manager
 system-config-printer
+#hplip
+imagescan
+
 
 # Firefox
 firefox
@@ -336,6 +339,7 @@ lupaca-kde-config
 lupaca-plasma-look
 lupaca-wallpaper
 lupaca-cursor
+lupaca-plymouth
 sddm-lupaca-theme
 
 # Calamares Installer
