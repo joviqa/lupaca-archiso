@@ -3,7 +3,7 @@
 alsa-utils
 amd-ucode
 arch-install-scripts
-#1archinstall
+#archinstall
 #b43-fwcutter
 base
 bind-tools
@@ -14,7 +14,7 @@ clonezilla
 #cloud-init
 crda
 #cryptsetup
-darkhttpd
+#darkhttpd
 ddrescue
 dhclient
 #dhcpcd
@@ -44,7 +44,7 @@ irssi
 #iw
 #iwd
 jfsutils
-kitty-terminfo
+#kitty-terminfo
 less
 #lftp
 libfido2
@@ -140,6 +140,8 @@ xorg-server
 xorg-xinit
 
 # Video Packages
+mesa
+xf86-video-fbdev
 xf86-video-vesa
 #xf86-video-intel
 xf86-video-nouveau
@@ -225,7 +227,7 @@ kdenetwork-filesharing
 #akregator
 akonadi
 kmail
-korganizer
+#korganizer
 dolphin
 #kron
 khelpcenter
