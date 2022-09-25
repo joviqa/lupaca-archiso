@@ -1,3 +1,3 @@
-# Arch Linux LupacaOS Installer
+# Arch Linux Installer
 
- Development Version 0.1c
+ Version 0.4g
